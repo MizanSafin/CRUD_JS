@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.title {
+  margin: 0% 0px -10px;
+  padding: 10px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(197, 195, 223);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(82, 77, 122);
+  color: rgb(149, 145, 182);
+}
+.form--container,
+.table--container {
+  width: 98%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+.table--container {
+  overflow-x: scroll;
+}
+
+fieldset {
+  width: 100%;
+  padding: 10px;
+  border-color: rgb(149, 145, 182);
+}
+
+legend {
+  font-size: 22px;
+}
+.form-group {
+  padding: 10px;
+}
+
+.form-group input {
+  width: 90%;
+  display: block;
+  padding: 7px;
+  margin-top: 10px;
+}
+
+.form-group input[type="reset"],
+input[type="submit"] {
+  width: unset;
+  display: unset;
+  cursor: pointer;
+  color: rgb(149, 145, 182);
+}
+table {
+  width: 600px;
+  border-collapse: collapse;
+}
+
+.fa-trash {
+  margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  table {
+    width: 500px;
+  }
+  .form--container,
+  .table--container {
+    width: 98%;
+    max-width: 500px;
+  }
+}
+td,
+th {
+  padding: 5px 20px;
+  text-align: center;
+}
+th {
+  background-color: rgb(61, 54, 112);
+}
+i {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+/* table {
+  width: 100%;
+  border-collapse: collapse;
+  display: inline-grid;
+  grid-template-areas:
+    "head-fixed"
+    "body-scrollable";
+} */
+
+/* thead {
+  grid-area: head-fixed;
+}
+
+tbody {
+  grid-area: body-scrollable;
+  overflow: auto;
+} */
+
+/* thead and tbody */
+
+/* thead {
+  grid-area: head-fixed;
+  display: block;
+  background-color: #08381f;
+  display: table;
+  width: calc(100% - 5px);
+}
+
+tbody {
+  grid-area: body-scrollable;
+  display: block;
+   max-height: 360px;
+  width: calc(100% - 5px);
+  overflow-y: scroll;
+} 
+*/

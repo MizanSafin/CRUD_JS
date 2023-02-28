@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud Operation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e792429619.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h2 class="title">JS CRUD Application</h2>
+    <div class="form--container">
+      <fieldset>
+        <legend>Enter Your Data</legend>
+        <form onsubmit="event.preventDefault();handleFormSubmit()">
+          <div class="form-group">
+            <label for="Name">Write Your Name: </label>
+            <input
+              type="text"
+              name="Name"
+              id="Name"
+              placeholder="Write your Name"
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group">
+            <label for="job">Write Your Job: </label>
+            <input
+              type="text"
+              name="job"
+              id="job"
+              placeholder="Write your Job"
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exp">Write Your Experience Age: </label>
+            <input
+              type="text"
+              name="exp"
+              id="rxp"
+              placeholder="Write your Experience"
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group form-btn">
+            <input type="submit" value="Submit " />
+            <input type="reset" value="Reset" />
+          </div>
+        </form>
+      </fieldset>
+    </div>
+
+    <div class="table--container">
+      <fieldset class="table--field">
+        <legend>Form Datas</legend>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>SN</th>
+              <th>Name</th>
+              <th>Job</th>
+              <th>Exp</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody class="tbody"></tbody>
+        </table>
+      </fieldset>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
